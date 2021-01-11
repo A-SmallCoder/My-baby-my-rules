@@ -1,7 +1,6 @@
 import React from 'react';
 import Left from '../Left';
 import Right from '../Right';
-import Card from '../UI/Card/Index';
 import './style.css';
 
 /**

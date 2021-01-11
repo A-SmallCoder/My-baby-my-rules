@@ -4,7 +4,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import $ from 'jquery';
 import Header from './components/Header'
 import Home from './containers/Home';
-import Hero from './components/Hero';
 
 function App() {
   return (

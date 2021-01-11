@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import $ from 'jquery';
 
 /**
 * @author
@@ -8,11 +9,25 @@ import './style.css';
 
 const Card = (props) => {
   return(
-    <div className="card">
-        {props.children}
+    <div className="card" className="mr-5 d-flex align-items-end mb-4">
+      <div className="cardLower">
+        <h5>Title title</h5>
+        <p className="subtitle">In publishing and graphic design, Lorem ipsum is a placeholder text commonly</p>
+      </div>
+
+      <div className="imgdiv">
+        <img className="img" src="babyClothes.jpg"/>
+      </div>
     </div>
+    
    )
 
+ }
+ 
+ //make text same width as pic
+ window.onload = function (){
+   var width = $(".img").css("width");
+   $(".cardLower").css("width",width);
  }
 
 export default Card

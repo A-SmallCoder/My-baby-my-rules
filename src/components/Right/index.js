@@ -9,9 +9,7 @@ import Card from '../UI/Card/Index'
 const Right = (props) => {
   return(
     <div>
-        <Card>
-            Card on right
-        </Card>
+        <Card/>
     </div>
    )
 

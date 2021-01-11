@@ -3,14 +3,23 @@
     color: transparent;
 }
 hr{
-    border-color: rgb(67, 230, 213);
+    border-color: rgb(117, 91, 98);
     box-shadow: 1px 0px 1.5px rgb(221, 221, 221);
 }
 
-h2{
+h2,h2:active{
+    width:fit-content;
+    color:black;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
 }
 h2:hover{
-    color: rgb(67, 230, 213);
+    color: rgb(47, 153, 142);
     text-shadow: 1px 0px 1px rgb(139, 139, 139);
+}
+
+@media only screen and (max-width: 600px) {
+    h2{
+        text-decoration: underline;
+    }
 }
