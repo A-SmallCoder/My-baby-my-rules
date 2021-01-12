@@ -17,8 +17,40 @@ h2:hover{
     color: rgb(47, 153, 142);
     text-shadow: 1px 0px 1px rgb(139, 139, 139);
 }
+#more, #morec{
+    color:blue;
+    margin-bottom: 20px;
+}
+
+#categories{
+    border: solid 1px rgb(47, 153, 142);
+    padding: 40px 30px;
+    font-weight: 650;
+    margin-bottom: 30px;
+}
+#categories p{
+    width:50%;
+    color: rgb(47, 153, 142);
+    text-align: center;
+    margin-top: 15px;
+}
+
+#contact{
+    padding: 10px;
+    border-radius: 2px;
+}
 
 @media only screen and (max-width: 600px) {
+    h2{
+        text-decoration: underline;
+    }
+
+    #categories p{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
     h2{
         text-decoration: underline;
     }

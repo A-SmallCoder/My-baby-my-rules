@@ -49,3 +49,7 @@ a,a:hover,a:visited{
 #bottom{
     margin-top: -62px;
 }
+
+#openbtn img{
+    transform: rotate(90deg);
+}

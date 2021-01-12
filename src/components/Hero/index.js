@@ -18,11 +18,11 @@ const Hero = (props) => {
         </Left>
       </div>
 
-      <dic id="rightSide">
+      <div id="rightSide">
         <Right>
           {props.children}
         </Right>
-      </dic>
+      </div>
       
     </div>
    )

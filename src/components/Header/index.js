@@ -14,19 +14,21 @@ const Header = (props) => {
     <div>
         <header id="header" className="smart-scroll">
             <div>
-                <nav className="navbar navbar-expand-lg row d-flex justify-content-between">
+                <nav className="navbar navbar-expand-lg d-flex justify-content-between">
                     <div>
                         <a href="#"> 
                             <h3 id="title">
                                 <div className="row, d-flex, justify-content-center">
-                                    <p id="top">My baby</p><br/>
-                                    <p id="bottom"> <img id="logo" src="logo.png"/> my rules</p>
+                                    <strong>
+                                        <p id="top">My baby</p><br/>
+                                        <p id="bottom"> <img id="logo" alt="logo" src="logo.png"/> My rules</p>
+                                    </strong>
                                 </div>                                
                             </h3> 
                         </a>
                     </div>
                     
-                    <div id="openbtn" onClick={toggleMenu} className="mb-3"><img src="menu.png"/></div>                    
+                    <div id="openbtn" onClick={toggleMenu} className="mb-3"><img alt="menu icon" src="menu.png"/></div>                    
                 </nav>
             </div>
             
@@ -36,16 +38,18 @@ const Header = (props) => {
 
  }
 
-// detect scroll top or down
+// detect scroll up or down
 window.onload = function(){
     if ($('.smart-scroll').length > 0) { // check if element exists
         var last_scroll_top = 0;
         $(window).on('scroll', function() {
             var scroll_top = $(this).scrollTop();
             if(scroll_top < last_scroll_top) {
+                console.log("scrolled up");
                 $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
             }
             else {
+                console.log("scrolled down");
                 $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
             }
             last_scroll_top = scroll_top;
@@ -54,7 +58,7 @@ window.onload = function(){
 }
 
 function toggleMenu() {
-    if($("#bar").css("width") == "0px"){
+    if($("#bar").css("width") === "0px"){
         $("#bar").css("width","400px");
     }else{
         $("#bar").css("width","0px");

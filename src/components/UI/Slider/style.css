@@ -32,3 +32,11 @@
         padding: 20px 0px;
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    #banner{
+        top: 28%;
+        width:90%;
+        padding: 20px 0px;
+    }
+}

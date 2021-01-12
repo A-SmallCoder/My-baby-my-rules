@@ -11,7 +11,7 @@ function App() {
 
       <div id="bar" className="row">
         <div onClick={toggleMenu} className="float-right">
-          <a href="javascript:void(0)" class="closebtn">×</a>
+          <a className="closebtn">×</a>
         </div>
         
         <ul>
@@ -23,7 +23,7 @@ function App() {
                     
       </div>
 
-      <div id="myAppContainer">
+      <div>
         <Header id="main"/>
         <div>
           <p id="padding">This is the padding at the top of page</p>
@@ -39,7 +39,7 @@ function App() {
 }
 
 function toggleMenu() {
-  if($("#bar").css("width") == "0px"){
+  if($("#bar").css("width") === "0px"){
       $("#bar").css("width","400px");
   }else{
       $("#bar").css("width","0px");
