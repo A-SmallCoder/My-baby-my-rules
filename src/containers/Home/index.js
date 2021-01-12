@@ -46,7 +46,7 @@ var Home = props =>{
                         <a id="morec" href="#">more categories</a>
                     </div>
                     
-
+                    {/*contact*/}
                     <div id="contact">
                         <h3>Contact us</h3>
 

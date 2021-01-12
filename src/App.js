@@ -4,6 +4,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import $ from 'jquery';
 import Header from './components/Header'
 import Home from './containers/Home';
+import Footer from './components/Footer';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import Article from './containers/Article';
+
+library.add(fab);
 
 function App() {
   return (
@@ -29,7 +35,8 @@ function App() {
           <p id="padding">This is the padding at the top of page</p>
         </div>
 
-        <Home />
+        <Article/>
+        <Footer/>
       </div>
       
       
