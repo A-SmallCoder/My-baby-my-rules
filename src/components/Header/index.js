@@ -3,6 +3,7 @@ import "./style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { Link } from 'react-router-dom';
 
 /**
 * @author Andrew-Lloyd Small
@@ -16,7 +17,7 @@ const Header = (props) => {
             <div>
                 <nav className="navbar navbar-expand-lg d-flex justify-content-between">
                     <div>
-                        <a href="#"> 
+                        <Link to="/"> 
                             <h3 id="title">
                                 <div className="row, d-flex, justify-content-center">
                                     <strong>
@@ -25,7 +26,7 @@ const Header = (props) => {
                                     </strong>
                                 </div>                                
                             </h3> 
-                        </a>
+                        </Link>
                     </div>
                     
                     <div id="openbtn" onClick={toggleMenu} className="mb-3"><img alt="menu icon" src="menu.png"/></div>                    

@@ -7,13 +7,13 @@ hr{
     box-shadow: 1px 0px 1.5px rgb(221, 221, 221);
 }
 
-h2,h2:active{
+.mainLink{
     width:fit-content;
     color:black;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 30px;
 }
-h2:hover{
+.mainLink:hover{
     color: rgb(47, 153, 142);
     text-shadow: 1px 0px 1px rgb(139, 139, 139);
 }
@@ -28,7 +28,7 @@ h2:hover{
     font-weight: 650;
     margin-bottom: 30px;
 }
-#categories p{
+#categories a{
     width:50%;
     color: rgb(47, 153, 142);
     text-align: center;
@@ -41,17 +41,8 @@ h2:hover{
 }
 
 @media only screen and (max-width: 600px) {
-    h2{
-        text-decoration: underline;
-    }
-
-    #categories p{
+    #categories a{
         width:100%;
     }
-}
 
-@media only screen and (max-width: 1020px) {
-    h2{
-        text-decoration: underline;
-    }
 }

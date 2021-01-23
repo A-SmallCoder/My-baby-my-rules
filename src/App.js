@@ -1,13 +1,18 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import $ from 'jquery';
-import Header from './components/Header'
-import Home from './containers/Home';
-import Footer from './components/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import $ from 'jquery';
+import Header from './components/Header'
+import Footer from './components/Footer';
+import Home from './containers/Home';
 import Article from './containers/Article';
+import Articles from './containers/Articles';
+import Categories from './containers/Categories';
+import Signin from './containers/Signin';
+import { Link, Route, Router, Switch } from 'react-router-dom';
+
 
 library.add(fab);
 
@@ -21,12 +26,11 @@ function App() {
         </div>
         
         <ul>
-          <li><a href="#">Articles</a><br/></li>
-          <li><a href="#">Categories</a><br/></li>
-          <li><a href="#">Contact us</a><br/></li>
-          <li><a href="#">Sign in</a></li>
+          <li onClick={toggleMenu}><Link to="/">Home</Link><br/></li>
+          <li onClick={toggleMenu}><Link to="/Articles">Articles</Link><br/></li>
+          <li onClick={toggleMenu}><Link to="/Categories">Categories</Link><br/></li>
+          <li onClick={toggleMenu}><Link to="/Signin">Sign in</Link></li>
         </ul>
-                    
       </div>
 
       <div>
@@ -34,13 +38,15 @@ function App() {
         <div>
           <p id="padding">This is the padding at the top of page</p>
         </div>
-
-        <Article/>
+        
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/Articles" component={Articles} />
+            <Route path="/Categories" component={Categories} />
+            <Route path="/Signin" component={Signin} /> 
+          </Switch>
         <Footer/>
       </div>
-      
-      
-      
     </div>
   );
 }

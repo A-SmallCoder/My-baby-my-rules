@@ -12,7 +12,7 @@ var Home = props =>{
             <Hero>
                 <Left>
                     <a href="#">
-                        <h2>Read articles</h2>
+                        <h2 className="mainLink">Read articles</h2>
                     </a>
                     
                     <div className="container d-flex justify-content-center">
@@ -30,15 +30,15 @@ var Home = props =>{
 
                     <hr/>
                     <a href="#">
-                        <h2>Categories</h2>
+                        <h2 className="mainLink">Categories</h2>
                     </a>
                     
                     <div className="d-flex flex-column" id="categories">
                         <div className="row">
-                            <p>Tips and tricks</p>
-                            <p>So relatable</p>
-                            <p>Cures and remedies</p>
-                            <p>Bumps and rashes</p>
+                            <a href="#"><p>Tips and tricks</p></a>
+                            <a href="#"><p>So relatable</p></a>
+                            <a href="#"><p>Cures and remedies</p></a>
+                            <a href="#"><p>Bumps and rashes</p></a>
                         </div>                        
                     </div>
 
