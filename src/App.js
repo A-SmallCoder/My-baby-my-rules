@@ -12,6 +12,12 @@ import Articles from './containers/Articles';
 import Categories from './containers/Categories';
 import Signin from './containers/Signin';
 import { Link, Route, Router, Switch } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons'
+import { faList } from '@fortawesome/free-solid-svg-icons'
+import { faDoorOpen} from '@fortawesome/free-solid-svg-icons'
+
 
 
 library.add(fab);
@@ -22,21 +28,21 @@ function App() {
 
       <div id="bar" className="row">
         <div onClick={toggleMenu} className="float-right">
-          <a className="closebtn">×</a>
+          <a className="closebtn pt-3 pr-4 pl-2">×</a>
         </div>
         
         <ul>
-          <li onClick={toggleMenu}><Link to="/">Home</Link><br/></li>
-          <li onClick={toggleMenu}><Link to="/Articles">Articles</Link><br/></li>
-          <li onClick={toggleMenu}><Link to="/Categories">Categories</Link><br/></li>
-          <li onClick={toggleMenu}><Link to="/Signin">Sign in</Link></li>
+          <li onClick={toggleMenu}><Link to="/"><FontAwesomeIcon className="barIcon" icon={faHome}/> Home</Link><br/></li>
+          <li onClick={toggleMenu}><Link to="/Articles"><FontAwesomeIcon className="barIcon" icon={faNewspaper}/> Articles</Link><br/></li>
+          <li onClick={toggleMenu}><Link to="/Categories"><FontAwesomeIcon className="barIcon" icon={faList}/> Categories</Link><br/></li>
+          <li onClick={toggleMenu}><Link to="/Signin"><FontAwesomeIcon className="barIcon" icon={faDoorOpen}/> Sign in</Link></li>
         </ul>
       </div>
 
       <div>
         <Header id="main"/>
         <div>
-          <p id="padding">This is the padding at the top of page</p>
+          <p id="padding">This is the padding at the top of page for when the header scrolls</p>
         </div>
         
           <Switch>

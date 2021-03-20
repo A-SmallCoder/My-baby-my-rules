@@ -20,16 +20,13 @@ const Header = (props) => {
                         <Link to="/"> 
                             <h3 id="title">
                                 <div className="row, d-flex, justify-content-center">
-                                    <strong>
-                                        <p id="top">My baby</p><br/>
-                                        <p id="bottom"> <img id="logo" alt="logo" src="logo.png"/> My rules</p>
-                                    </strong>
+                                    <img src="/images/logo.jpeg" alt="logo" id="logoimg"/>
                                 </div>                                
                             </h3> 
                         </Link>
                     </div>
                     
-                    <div id="openbtn" onClick={toggleMenu} className="mb-3"><img alt="menu icon" src="menu.png"/></div>                    
+                    <div id="openbtn" onClick={toggleMenu} className="mb-3"><img alt="menu icon" src="images/menu.png"/></div>                    
                 </nav>
             </div>
             

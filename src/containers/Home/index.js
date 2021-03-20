@@ -1,3 +1,4 @@
+import { Link, Route, Switch } from 'react-router-dom';
 import Hero from '../../components/Hero';
 import Left from '../../components/Left';
 import Card from '../../components/UI/Card/Index';
@@ -25,8 +26,12 @@ var Home = props =>{
                     </div>
 
                     <div className="row d-flex justify-content-center">
-                        <a id="more" href="#">more...</a>
+                        <Link to="/">more...</Link>
                     </div>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        
+                    </Switch>
 
                     <hr/>
                     <a href="#">
