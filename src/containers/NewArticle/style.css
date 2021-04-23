@@ -1,0 +1,12 @@
+#newArticle h2{
+    font-size: 2em;
+}
+
+#title{
+    width:250px;
+}
+#pp{
+    height: 170px;
+    width: auto;
+    border: solid black 1px;
+}

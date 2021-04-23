@@ -1,3 +1,5 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { increment } from '../../actions';
 import Hero from '../../components/Hero';
 import Left from '../../components/Left';
 import Card from '../../components/UI/Card/Index';
@@ -5,6 +7,10 @@ import Slider from '../../components/UI/Slider';
 import './style.css';
 
 var Home = props =>{
+    const counter = useSelector(state => state.counterReducer);
+    const logged = useSelector(state => state.loggedReducer);
+    const dispatch = useDispatch();
+
     return(
         <div>
             <Slider/>
@@ -14,7 +20,7 @@ var Home = props =>{
                     <a href="#">
                         <h2 className="mainLink">Read articles</h2>
                     </a>
-                    
+                                        
                     <div className="container d-flex justify-content-center">
                         <div className="row justify-content-around">
                             <Card/>
@@ -66,8 +72,13 @@ var Home = props =>{
                                 <label for="comment">Comment</label>
                                 <textarea className="form-control" rows="4" id="comment"></textarea>
                             </div>
+
+                            <p>
+                                counter {counter}
+                            </p>
+                            {counter >= 10 ? <p> greater than or equal 10</p> : <p>less than 10</p>}
                             
-                            <button type="submit" className="btn btn-primary float-right">Submit</button>
+                            <button type="button" onClick={()=>dispatch(increment(5))} className="btn btn-primary float-right">Submit</button>
 
                         </form>
                     </div>

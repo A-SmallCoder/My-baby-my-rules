@@ -1,4 +1,34 @@
 #articeTitle{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Vollkorn', serif;
     width: max-content;
+}
+
+#publication{
+    margin-top: -15px;
+}
+
+.img{
+    height: auto;
+    width: 100%;
+    background-color: #152D46;
+    box-shadow: 1px 1px 3px rgb(180, 180, 180);
+}
+
+.fa{
+    color: #344252;
+}
+
+#line{
+    margin-top: -5px;
+}
+
+#topSection{
+    margin-top: -20px;
+}
+hr{
+    border:solid .1px rgb(185, 185, 185);
+}
+
+#ourFaves{
+    border: 1px solid rgba(101, 233, 220, 0.527);
 }

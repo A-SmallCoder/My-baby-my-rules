@@ -15,8 +15,8 @@ const Header = (props) => {
     <div>
         <header id="header" className="smart-scroll">
             <div>
-                <nav className="navbar navbar-expand-lg d-flex justify-content-between">
-                    <div>
+                <nav className="navbar navbar-expand-lg row">
+                    <div id="headerLogo" className="mr-auto">
                         <Link to="/"> 
                             <h3 id="title">
                                 <div className="row, d-flex, justify-content-center">
@@ -26,7 +26,9 @@ const Header = (props) => {
                         </Link>
                     </div>
                     
-                    <div id="openbtn" onClick={toggleMenu} className="mb-3"><img alt="menu icon" src="images/menu.png"/></div>                    
+                    <div id="openbtn" onClick={toggleMenu} className="mb-3">
+                        <img alt="menu icon" src="images/menu.png"/>
+                    </div>                    
                 </nav>
             </div>
             
