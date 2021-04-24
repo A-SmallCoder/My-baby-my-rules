@@ -90,6 +90,11 @@ const NewArticle = (props) => {
                 
             </div>
 
+            <div className="row d-flex justify-content-around mt-3">
+                <button type="button">Preview</button>
+                <button type="button">Post</button>
+            </div>
+
             
 
         </form>
