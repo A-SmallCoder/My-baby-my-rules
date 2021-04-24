@@ -46,17 +46,48 @@ const NewArticle = (props) => {
                 <textarea className="form-control" id="section3" wrap="soft"/>
             </div><br/>
 
-            <h3><label for="ourfavesDiv">Our Faves</label></h3>
-            
-            <div className="row d-flex justify-content-around" id="ourfavesDiv">
+            <h3>Photos</h3  >
+            <hr/>
+            <div className="row d-flex-justify-content-around p-4 mb-3">
                 <div>
                     <label for="title">Fave 1</label><br/>
-                    <input type="text" className="form-control faveName mb-2"/>
                     <input type="file" id="photo"></input>
                 </div>
                 <div>
-                    <img id="pp" src="/images/imageIcon.png" alt="uploaded image" />
+                    <label for="title">Fave 1</label><br/>
+                    <input type="file" id="photo"></input>
                 </div>
+            </div>
+
+            <h3><label for="ourfavesDiv">Our Faves</label></h3>
+            <hr />
+            
+            <div className="p-4 row d-flex justify-content-between" id="ourfavesDiv">
+                <div>
+                    <label for="title">Fave 1</label><br/>
+                    <input type="text" className="form-control faveName mb-2" placeholder="Fave name"/>
+                    <span>Fave Image: </span><input type="file" id="photo"></input>
+                    <input type="text" className="form-control linkString mb-2 mt-2" placeholder="Item link"/>
+                </div>
+                <div>
+                    <label for="title">Fave 2</label><br/>
+                    <input type="text" className="form-control faveName mb-2" placeholder="Fave name"/>
+                    <span>Fave Image: </span><input type="file" id="photo"></input>
+                    <input type="text" className="form-control linkString mb-2 mt-2" placeholder="Item link"/>
+                </div>
+                <div>
+                    <label for="title">Fave 3</label><br/>
+                    <input type="text" className="form-control faveName mb-2" placeholder="Fave name"/>
+                    <span>Fave Image: </span><input type="file" id="photo"></input>
+                    <input type="text" className="form-control linkString mb-2 mt-2" placeholder="Item link"/>
+                </div>
+                <div>
+                    <label for="title">Fave 4</label><br/>
+                    <input type="text" className="form-control faveName mb-2" placeholder="Fave name"/>
+                    <span>Fave Image: </span><input type="file" id="photo"></input>
+                    <input type="text" className="form-control linkString mb-2 mt-2" placeholder="Item link"/>
+                </div>
+                
             </div>
 
             

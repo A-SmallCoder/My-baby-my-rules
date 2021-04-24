@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { increment } from '../../actions';
 import Hero from '../../components/Hero';
 import Left from '../../components/Left';
@@ -23,7 +24,10 @@ var Home = props =>{
                                         
                     <div className="container d-flex justify-content-center">
                         <div className="row justify-content-around">
-                            <Card/>
+                            <Link to="/Article">
+                                <Card/>
+                            </Link>
+                            
                             <Card/>
                             <Card/>
                             <Card/>

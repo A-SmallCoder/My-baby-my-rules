@@ -30,6 +30,7 @@ const AdminLogin = (props) => {
       {/*
       <style>{"\
         #adminBar{display: none;}\
+        #adminHero{left:10%}\
       "}</style>
       */}
     </div>

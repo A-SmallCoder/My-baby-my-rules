@@ -11,7 +11,7 @@ import './style.css';
 * @function AdminHero
 **/
 
-const AdminHero = (props) => {
+const AdminHero = () => {
   return(
     <div id="adminHero">
       <Switch>

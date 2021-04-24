@@ -1,6 +1,7 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
+import ArticleTile from '../../components/UI/ArticleTile';
 import "./style.css";
 
 /**
@@ -20,7 +21,13 @@ const AdminHome = (props) => {
         <hr/>
 
         <div className="feed">
-        
+          <ArticleTile/>
+          <ArticleTile/>
+          <ArticleTile/>
+          <ArticleTile/>
+          <ArticleTile/>
+          <ArticleTile/>
+          <ArticleTile/>
         </div>
     </div>
    )

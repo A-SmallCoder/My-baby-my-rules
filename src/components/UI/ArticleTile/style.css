@@ -1,0 +1,22 @@
+.articleTile{
+    box-shadow: 1px 1px 3px rgb(79, 114, 111);
+    border: solid 1px #152D46;
+    border-radius: 5px;
+    padding: 20px 15px;
+    height: 100%;
+    margin-bottom: 25px;
+}
+
+.viewButton{
+    border: solid 1px #152D46;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 91%;
+    background-color: rgb(60, 211, 196);
+}
+
+ .articleTile span{
+    color:white;
+    font-size:  18px;
+    font-weight: 600;
+}
