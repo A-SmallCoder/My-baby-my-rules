@@ -95,8 +95,6 @@ const NewArticle = (props) => {
                 <button type="button">Post</button>
             </div>
 
-            
-
         </form>
     </div>
    )

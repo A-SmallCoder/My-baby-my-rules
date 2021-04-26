@@ -22,7 +22,7 @@ const ArticleTile = (props) => {
 
                     <div>
                         <h2>{data.title}</h2>
-                        <Link className="viewButton" to="../Article"><span>View</span></Link>
+                        <Link className="viewButton" to="/Admin_/ArticlePreview"><span>View</span></Link>
                     </div>
 
                 </div>
