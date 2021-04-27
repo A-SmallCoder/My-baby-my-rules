@@ -4,6 +4,7 @@ import AdminHome from '../../containers/AdminHome';
 import ArticlePreview from '../../containers/ArtilcePreview';
 import NewArticle from '../../containers/NewArticle';
 import NotFound from '../../containers/NotFound';
+import OurFaves from '../../containers/OurFaves';
 import AdminLogin from '../AdminLogin';
 import './style.css';
 
@@ -20,6 +21,7 @@ const AdminHero = () => {
         <Route path="/Admin_/Home" component={AdminHome}/>
         <Route path="/Admin_/NewArticle" component={NewArticle}/>
         <Route path="/Admin_/ArticlePreview" component={ArticlePreview}/>
+        <Route path="/Admin_/OurFaves" component={OurFaves}/>
         <Route component={NotFound} /> 
       </Switch>
     </div>

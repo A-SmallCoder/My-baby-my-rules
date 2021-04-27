@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css";
-import {$} from 'jquery';
+
 
 /**
 * @author
@@ -24,7 +24,7 @@ const NewArticle = (props) => {
 
   return(
     <div id="newArticle">
-        <h2>New Article</h2><hr/><br/>
+        <h1>New Article</h1><hr/><br/>
         <form>
             <div className="form-group">
                 <label for="title">Title</label><br/>
