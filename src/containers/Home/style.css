@@ -3,14 +3,46 @@
     color: transparent;
 }
 hr{
-    border-color: rgb(67, 230, 213);
+    border-color: rgb(117, 91, 98);
     box-shadow: 1px 0px 1.5px rgb(221, 221, 221);
 }
 
-h2{
+.mainLink{
+    width:fit-content;
+    color:black;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
 }
-h2:hover{
-    color: rgb(67, 230, 213);
+.mainLink:hover{
+    color: rgb(47, 153, 142);
     text-shadow: 1px 0px 1px rgb(139, 139, 139);
+}
+#more, #morec{
+    color:blue;
+    margin-bottom: 20px;
+}
+
+#categories{
+    border: solid 1px rgb(47, 153, 142);
+    padding: 40px 30px;
+    font-weight: 650;
+    margin-bottom: 30px;
+}
+#categories a{
+    width:50%;
+    color: rgb(47, 153, 142);
+    text-align: center;
+    margin-top: 15px;
+}
+
+#contact{
+    padding: 10px;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    #categories a{
+        width:100%;
+    }
+
 }

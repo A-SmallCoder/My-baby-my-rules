@@ -1,0 +1,29 @@
+#cat{
+    border: solid 1px rgb(47, 153, 142);
+    padding: 40px 50px;
+    font-weight: 650;
+    height: 100%;
+}
+#catrow div{
+    width:100%;
+    text-align: left;
+}
+
+#catrow div a{
+    color: rgb(47, 153, 142);
+}
+
+#categoriesTop{
+    margin-top:50px;
+}
+.weak{
+    font-weight: 500;
+    color:rgb(97, 96, 96);
+    margin-top: -11px;
+}
+
+@media only screen and (max-width: 600px){
+    #cat a{
+        width:100%;
+    }
+}

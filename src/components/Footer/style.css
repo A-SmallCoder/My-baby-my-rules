@@ -1,0 +1,32 @@
+#footerLower{
+    border: none;
+    height:min-content;
+    font-size: 15px;
+}
+#footerLower a:hover{
+    color:#5ce1e6;
+    font-size: 17px;
+}
+
+#footerMain{
+    border: none;
+    background-color: #152D46;
+    color:#5ce1e6;
+    padding:20px 50px;
+    font-family: 'Architects Daughter', cursive;
+    z-index: 100;
+    height: 85px;
+    box-shadow: -1px -3px 6px rgb(73, 73, 73);
+}
+#footerMain a{
+    text-decoration: underline;
+    color:#5ce1e6;
+}
+#footerMain a:hover{
+    font-size: 15px;
+    color:#5ce1e6;
+}
+
+#footerContainer{
+    margin-top: 50px;
+}

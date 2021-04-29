@@ -1,7 +1,6 @@
 import React from 'react';
 import Left from '../Left';
 import Right from '../Right';
-import Card from '../UI/Card/Index';
 import './style.css';
 
 /**
@@ -19,11 +18,11 @@ const Hero = (props) => {
         </Left>
       </div>
 
-      <dic id="rightSide">
+      <div id="rightSide">
         <Right>
           {props.children}
         </Right>
-      </dic>
+      </div>
       
     </div>
    )

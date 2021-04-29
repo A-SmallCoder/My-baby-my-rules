@@ -1,0 +1,20 @@
+.adminLogin{
+    background-color: #152D46;
+    padding: 50px 70px;
+    margin-top: 5%;
+    color:white;
+    box-shadow: 1px 1px 3px rgb(167, 166, 166);
+    border-radius: 5px;
+}
+
+.adminLogin button{
+    float: right;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #152D46;
+}
+
+#loginLogo{
+    width:150px;
+    height: auto;
+}

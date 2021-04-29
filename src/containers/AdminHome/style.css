@@ -1,0 +1,9 @@
+.adminHome{
+    padding: 20px 50px;
+}
+
+.sub{
+    border:solid 1px black;
+    border-radius: 5px;
+    background-color: white;
+}

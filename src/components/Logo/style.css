@@ -2,6 +2,8 @@
     width:inherit;
     height: inherit;
     margin-top: 8px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 550;
 }
 #logo{
     height:20px;
