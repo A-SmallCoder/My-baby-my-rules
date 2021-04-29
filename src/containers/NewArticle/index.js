@@ -28,7 +28,7 @@ const NewArticle = (props) => {
         <form>
             <div className="form-group">
                 <label for="title">Title</label><br/>
-                <input type="text" className="form-control" id="title"/>
+                <input type="text" className="form-control title" name="title"/>
             </div>
 
             <div className="form-group">

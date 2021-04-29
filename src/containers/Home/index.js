@@ -35,7 +35,7 @@ var Home = props =>{
                     </div>
 
                     <div className="row d-flex justify-content-center">
-                        <a id="more" href="#">more...</a>
+                        <Link to="./Articles"><span id="more">more...</span></Link>
                     </div>
 
                     <hr/>
@@ -53,7 +53,7 @@ var Home = props =>{
                     </div>
 
                     <div className="row d-flex justify-content-center">
-                        <a id="morec" href="#">more categories</a>
+                        <Link to="./Categories"><span id="morec">more categories</span></Link>
                     </div>
                     
                     {/*contact*/}

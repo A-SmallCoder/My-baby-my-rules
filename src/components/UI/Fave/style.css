@@ -23,6 +23,10 @@
     max-height: 50px;
 }
 
+.faveLower{
+    width: 100%;
+}
+
 .fave a{
     color: rgb(8, 8, 182);
     border: solid 1px rgb(167, 167, 167);

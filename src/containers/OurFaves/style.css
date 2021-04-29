@@ -1,0 +1,5 @@
+.linkRow{
+    max-width:150px;
+    word-wrap: break-word;
+    text-decoration: blue underline;
+}

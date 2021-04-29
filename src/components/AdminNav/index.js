@@ -22,7 +22,7 @@ const AdminNav = (props) => {
             <li><Link className="adminBarIcon" to="/Admin_/NewArticle">New Article</Link> </li><br/>
             <li><Link className="adminBarIcon" to="/Admin_/OurFaves">Our Faves</Link></li><br/>
             <li><Link className="adminBarIcon" to="/Admin_/Categories">Categories</Link></li><br/>
-            <li><Link className="adminBarIcon" to="/Admin_/DeleteArticle">Delete Article</Link></li>
+            <li><Link className="adminBarIcon" to="/Admin_/Stats">Statistics</Link></li>
           </h5>
         </ul>
     

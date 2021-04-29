@@ -57,6 +57,9 @@ ul {
   margin-right: 10px;
 }
 
+.pageTitle{
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media only screen and (max-width: 600px) {
   #bar a {

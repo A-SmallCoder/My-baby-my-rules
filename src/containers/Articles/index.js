@@ -5,6 +5,7 @@ import Logo from '../../components/Logo'
 import Card from '../../components/UI/Card/Index'
 import './style.css'
 import $ from 'jquery';
+import { Link } from 'react-router-dom'
 
 /**
 * @author Andrew-Lloyd Small
@@ -14,8 +15,8 @@ import $ from 'jquery';
 const Articles = (props) => {
   return(
     <div>
-      <div id="categoriesTop" className='d-flex justify-content-center'>
-          <h2>Articles</h2>
+      <div id="categoriesTop">
+          <h2 className="pageTitle">Articles</h2>
       </div>
 
       <Hero>
@@ -23,13 +24,15 @@ const Articles = (props) => {
           <div className="d-flex justify-content-center">
             <div className="row justify-content-around">
               
-            <div>
-                <Card/>
-                <div className="info d-flex justify-content-between">
-                  <span>Category</span>
-                  <span>11/21/2020</span>
+              <Link to='./Article'>
+                <div>
+                  <Card/>
+                  <div className="info d-flex justify-content-between">
+                    <span>Category</span>
+                    <span>11/21/2020</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <div>
                 <Card/>
                 <div className="info d-flex justify-content-between">

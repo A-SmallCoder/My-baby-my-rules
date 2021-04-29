@@ -7,14 +7,6 @@
     margin-bottom: 25px;
 }
 
-.viewButton{
-    border: solid 1px #152D46;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 91%;
-    background-color: rgb(60, 211, 196);
-}
-
  .articleTile span{
     color:white;
     font-size:  18px;

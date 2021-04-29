@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import Article from '../../../containers/Article'
 import './style.css'
 import { TileData } from './TileData'
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 /**
 * @author
@@ -10,6 +12,24 @@ import { TileData } from './TileData'
 **/
 
 const ArticleTile = (props) => {
+
+    function deleteArticle (item){
+        confirmAlert({
+          title: 'Confirm deletion',
+          message: 'Are you sure you want to delete this Article?',
+          buttons: [
+            {
+              label: 'Yes',
+              onClick: () => alert(item + ' Yes')
+            },
+            {
+              label: 'No',
+              onClick: () => alert(item + 'No')
+            }
+          ]
+        });
+    };
+
   return(
     <div className="articleTile">
         {TileData.map((data,key) => {
@@ -22,7 +42,10 @@ const ArticleTile = (props) => {
 
                     <div>
                         <h2>{data.title}</h2>
-                        <Link className="viewButton" to="/Admin_/ArticlePreview"><span>View</span></Link>
+                        <div className="row p-2 d-flex justify-content-between">
+                            <button  onClick={()=> deleteArticle('item to delete')} className='btn btn-danger'>Delete</button>
+                            <Link className="btn btn-primary" to="/Admin_/ArticlePreview"><span>View</span></Link>
+                        </div>
                     </div>
 
                 </div>

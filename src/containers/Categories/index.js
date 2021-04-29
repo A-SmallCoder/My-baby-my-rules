@@ -11,8 +11,8 @@ import './style.css'
 const Categories = (props) => {
   return(
     <div>
-        <div id="categoriesTop" className='d-flex justify-content-center'>
-            <h2>Categories</h2>
+        <div id="categoriesTop">
+            <h2 className="pageTitle">Categories</h2>
         </div>
 
         <Hero>
