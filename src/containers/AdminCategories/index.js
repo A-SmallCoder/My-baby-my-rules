@@ -47,7 +47,7 @@ const AdminCategories = (props) => {
     function deleteCategory (category){
         confirmAlert({
           title: 'Confirm deletion',
-          message: 'Are you sure you want to delete this category?',
+          message: 'Are you sure you want to delete this category? This cannot be undone.',
           buttons: [
             {
               label: 'Yes',
@@ -119,7 +119,7 @@ const AdminCategories = (props) => {
                     <td>3</td>
                     <td id="catDesc">In publishing and graphic designf a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy</td>
                     <td>
-                        <button type="submit" className="delBtn" onClick={() => deleteCategory("category")}>Delete this category</button>
+                        <button type="submit" className="btn btn-danger" onClick={() => deleteCategory("category")}>Delete this category</button>
                     </td>
                 </tr>
             </tbody>

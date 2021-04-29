@@ -91,8 +91,8 @@ const NewArticle = (props) => {
             </div>
 
             <div className="row d-flex justify-content-around mt-3">
-                <button type="button">Preview</button>
-                <button type="button">Post</button>
+                <button className='btn btn-primary' type="button">Preview</button>
+                <button className='btn btn-success' type="button">Post</button>
             </div>
 
         </form>
