@@ -33,7 +33,7 @@ const Stats = (props) => {
 
   return(
     <div>
-        hi
+        Coming soon
         <div className="chartHolder">
             <Chart data={data} axes={axes} />
         </div>
