@@ -24,11 +24,16 @@ const NewArticle = (props) => {
 
   return(
     <div id="newArticle">
-        <h1>New Article</h1><hr/><br/>
+        <h1>New Article</h1><hr/>
         <form>
             <div className="form-group">
                 <label for="title">Title</label><br/>
                 <input type="text" className="form-control title" name="title"/>
+            </div>
+
+            <div className="form-group">
+                <label for="intro">Intro</label><br/>
+                <textarea className="form-control" id="intro" wrap="soft"/>
             </div>
 
             <div className="form-group">
@@ -44,18 +49,23 @@ const NewArticle = (props) => {
             <div className="form-group">
                 <label for="section3">Section 3</label><br/>
                 <textarea className="form-control" id="section3" wrap="soft"/>
+            </div>
+
+            <div className="form-group">
+                <label for="outro">Outro</label><br/>
+                <textarea className="form-control" id="outro" wrap="soft"/>
             </div><br/>
 
-            <h3>Photos</h3  >
+            <h3>Photos</h3>
             <hr/>
-            <div className="row d-flex-justify-content-around p-4 mb-3">
+            <div className="row d-flex-justify-content-around pl-4 pr-4 pt-2 mb-5">
                 <div>
-                    <label for="title">Fave 1</label><br/>
-                    <input type="file" id="photo"></input>
+                    <label for="cover">Cover photo</label><br/>
+                    <input type="file" name="cover"></input>
                 </div>
                 <div>
-                    <label for="title">Fave 1</label><br/>
-                    <input type="file" id="photo"></input>
+                    <label for="photo2">photo 2</label><br/>
+                    <input type="file" name="photo2"></input>
                 </div>
             </div>
 

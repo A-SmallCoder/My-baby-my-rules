@@ -16,7 +16,7 @@ const ArticleTile = (props) => {
     function deleteArticle (item){
         confirmAlert({
           title: 'Confirm deletion',
-          message: 'Are you sure you want to delete this Article?',
+          message: 'Are you sure you want to delete this Article? This cannot be undone.',
           buttons: [
             {
               label: 'Yes',
