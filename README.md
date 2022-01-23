@@ -2,6 +2,6 @@
 
 npm install
 
-**#run app
+# Run MyBaby-MyRules locally
 
 npm start
